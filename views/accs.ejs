@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>accounts</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>accounts</h1>
+    <% acc.forEach(acc => { %>
+    <h3>email: <%= acc.email %></h3>
+    <p style="color: red">password: <%= acc.password %></p>
+    <% }); %>
+  </body>
+</html>
